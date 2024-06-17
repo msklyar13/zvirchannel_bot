@@ -44,7 +44,7 @@ async def extract_messages(channel_link):
     else:
         channel_name = channel_link
 
-    csv_filename = f'C:/Users/masha/OneDrive/Desktop/diplo/detect_fake/{channel_name}.csv'
+    csv_filename = f'{channel_name}.csv'
     df.to_csv(csv_filename, index=False)
     return csv_filename  # повертаємо покликання на файл у системі
 
